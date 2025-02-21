@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "9bde1c14-4554-47c8-afb6-e7f0f9fbe081",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42537988"
+	},
+	"item": [
+		{
+			"name": "Create Jira Issue",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hook.eu2.make.com/ejpxi4c5uxg1rc6n8ca3qvnyjqh2tyak",
+					"protocol": "https",
+					"host": [
+						"hook",
+						"eu2",
+						"make",
+						"com"
+					],
+					"path": [
+						"ejpxi4c5uxg1rc6n8ca3qvnyjqh2tyak"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
