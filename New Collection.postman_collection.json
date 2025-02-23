@@ -1,28 +1,40 @@
 {
 	"info": {
 		"_postman_id": "9bde1c14-4554-47c8-afb6-e7f0f9fbe081",
-		"name": "New Collection",
+		"name": "DEMO-PROJECT",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42537988"
 	},
 	"item": [
 		{
-			"name": "Create Jira Issue",
+			"name": "https://ranjanvaibhav5054.atlassian.net/rest/api/3/issue",
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ATATT3xFfGF00ap20IIS-qd8b33Zdn8iCa1Eg4ObGYccwgkwZ83FzwN9o_SMgEZBAdYE4a7BiQqcpW45Bzu6j_NEB1ZTcRUfiWIrZeh88Nu1hkhpBUOiSjYHmmkrwdA2OrAzG2ByePoJnPTwiHhwpPXeqev4Fy4z9R0RRhzC_PxGdHDX9FeH5aQ=90D24F9D",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ranjan.vaibhav5054@gmail.com",
+							"type": "string"
+						}
+					]
 				},
 				"method": "POST",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "",
+						"key": "Content-Type",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n  \"fields\": {\r\n    \"project\": { \"key\": \"PROJA\" },\r\n    \"summary\": \"Test Issue from Postman\",\r\n    \"description\": {\r\n      \"type\": \"doc\",\r\n      \"version\": 1,\r\n      \"content\": [\r\n        {\r\n          \"type\": \"paragraph\",\r\n          \"content\": [\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \"Created via API\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    \"issuetype\": { \"name\": \"Task\" }\r\n  }\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -30,16 +42,18 @@
 					}
 				},
 				"url": {
-					"raw": "https://hook.eu2.make.com/ejpxi4c5uxg1rc6n8ca3qvnyjqh2tyak",
+					"raw": "https://ranjanvaibhav5054.atlassian.net/rest/api/3/issue",
 					"protocol": "https",
 					"host": [
-						"hook",
-						"eu2",
-						"make",
-						"com"
+						"ranjanvaibhav5054",
+						"atlassian",
+						"net"
 					],
 					"path": [
-						"ejpxi4c5uxg1rc6n8ca3qvnyjqh2tyak"
+						"rest",
+						"api",
+						"3",
+						"issue"
 					]
 				}
 			},
